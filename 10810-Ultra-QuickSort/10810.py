@@ -31,7 +31,7 @@ def merge(ary, left, size):
             tmp.append(ary[right + j])
             j += 1
             
-    for i in range(left, size):
+    for i in range(0, size):
         ary[left + i] = tmp[i]
 
 n = int(input())
