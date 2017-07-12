@@ -22,9 +22,8 @@ def swap(ages, x, y):
 n = int(input())  
 while n != 0:
 
-    ages = list()
-    for i in range(0, n):
-        ages.append([age for age in input()])
+    ages = input().split(" ");
+    ages = [int(x) for x in ages]
 
     heapSort(ages, len(ages))   
     print ()
